@@ -1,4 +1,4 @@
-<ul class="ml-10 mt-5" style="list-style-type:disc ;font-size: 1.5rem">
+<ul class="ml-10 mt-5" style="list-style-type:disc">
   <% @notes.each do |note| %>
     <li>
       <%= link_to note.title, note %>
@@ -6,5 +6,5 @@
   <%end%>
 </ul>
 <div class="ml-15 mt-5" style="display:inline-block;margin-left:30px;color:teal">
-  <%= link_to 'Add Note', new_note_path %>
+  <%= link_to 'Add a new Note', new_note_path, class:"inline-flex justify-center rounded-md border border-transparent bg-gray-500 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" %>
 </div>
